@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>FlexCSS</title>
+    <meta name="viewport" content="width=device-width" />
+    <style type="text/css">
+      *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Trebuchet MS", Arial, Helvetica;
+       }
+      
+      .container{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+       }
+       
+      .change{
+        text-align: center;
+        padding: 20px;
+        color: white;
+      }
+      
+      .header{
+        background-color: #1abc9c;
+        text-align: center;
+        padding: 40px;
+      }
+      
+      .navbar{
+        display: flex;
+        background-color: #333;
+        color: black;
+      }
+      
+      .navbar a{
+        padding: 14px 16px;
+        text-decoration: none;
+        color: white;
+      }
+      
+      .navbar a:hover{
+        background-color: black;
+        color: white;
+      }
+      
+      .wrap{
+        display: flex;
+      }
+      
+      .side{
+        flex: 30%;
+        background-color: #f1f1f1;
+        padding: 20px;
+      }
+      
+      .main{
+        padding: 20px;
+        background-color: white;
+        flex: 70%;
+      }
+      
+      .img{
+        background-color: #aaa;
+        padding: 20px;
+        height: 200px;
+        margin-bottom: 20px;
+      }
+      
+      h4, h5{
+        padding: 20px;
+      }
+      
+      .footer{
+        padding: 40px;
+        text-align: center;
+        background-color: #ddd;
+        margin-bottom: 40px;
+        margin-top: 10px;
+      }
+      
+      .clas{
+        color: white;
+      }
+      
+      @media(max-width: 700px){
+        .wrap, .navbar{
+          flex-direction: column;
+          text-align: center;
+        }
+      }
+   </style>
+ </head>
+ <body>
+  <div class="container">
+    <div class="header">
+      <h2 class="change">My Website</h2><p class="clas"><br>With a <b>Flexbox</b> layout</p>
+    </div>
+    <div class="navbar">
+      <a href="">Home</a>
+      <a href="">News</a>
+      <a href="">About</a>
+      <a href="">More</a>
+    </div>
+    <div class="wrap">
+      <div class="side">
+        <h4>About Me</h4>
+        <h5>Photo of ME:</h5>
+        <div class="img">Image</div>
+        <p>Some text about me and much more bakwas so keep on doing and watching what you want...</p>
+        <h4>More Text</h4>
+        <p>Continue to write what ever things you see and its nice.</p>
+        <div class="img">Image</div>
+        <div class="img">Image</div>
+        <div class="img">Image</div>
+      </div>
+      <div class="main">
+        <h4>Title Heading</h4>
+        <h5>Title description, Dec7, 2017</h5>
+        <div class="img">Image</div>
+        <p>Some text...</p>
+        <p>Let me type myself because its weak I could have used lorem for the statements I need but due to this reason I need but due to do that I am just doing stupid things.</p>
+      </div>
+    </div>
+    <div class="footer">
+      <h3>Footer</h3>
+    </div>
+  </div>
+</body>
+</html>
+    
+      
+      
